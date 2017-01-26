@@ -15,7 +15,8 @@ function initializePage() {
 		$(".jumbotron p").toggleClass("active");
 	});
 
-$(".project").click(projectClick);
+
+$(".thumbnail").click(projectClick);
 function projectClick(e){
 	e.preventDefault();
 	$(this).css("background-color", "#7fff00");
@@ -25,9 +26,9 @@ function projectClick(e){
 		$(containingProject).append("<div class='project-description'><p>Description of the project.</p></div>");
 	} else {
 		$("#description").fadeIn();
+		$("#description").fadeOut();
 	}
 }
-
+}
 	// Add any additional listeners here
 	// example: $("#div-id").click(functionToCall);
-}
