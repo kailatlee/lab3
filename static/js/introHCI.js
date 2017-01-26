@@ -15,6 +15,7 @@ function initializePage() {
 		$(".jumbotron p").toggleClass("active");
 	});
 
+$(".project").click(projectClick);
 function projectClick(e){
 	e.preventDefault();
 	$(this).css("background-color", "#7fff00");
